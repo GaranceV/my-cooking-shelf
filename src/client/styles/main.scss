@@ -1,9 +1,55 @@
 @charset "UTF-8";
 
+@import 'resetStyles';
 @import 'variables';
+
+.container {
+    background-color: $c-strawberry;
+    font-family: 'Karla', sans-serif;
+    height: 100%;
+}
 
 .grid {
     &__header {
-        background-color: $c-strawberry; 
+        font-size: 60px;
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__navigation {
+        order: 2;
+        flex-basis: 30%;
+        font-size: 20px;
+    }
+
+    &__mainContent {
+        order: 1;
+        flex-basis: 70%;
+        margin-left: 20px;
+        font-size: 25px;
+    }
+
+    &__footer {
+        font-size: 25px;
+        max-width: 100%;
+        text-align: center;
+        height: 70px;
     }
 }
+
+.link {
+    color: $c-black;
+
+    &:focus,
+    &:hover {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+
+@import 'navigation';

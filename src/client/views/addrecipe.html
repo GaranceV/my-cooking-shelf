@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome!</title>
+    <title>New recipe</title>
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 </head>
@@ -10,22 +10,28 @@
     <div class="container">
         <header class="grid__header">
             <h1>
-                My cooking shelf
+                Add a recipe
             </h1>
         </header>
         <div class="grid__container">
             <main class="grid__mainContent">
-                Welcome on my cooking shelf.
-                <br/>
-                You can find in navigation links to add a recipe, or to see all the recipes I have at the moment.
-                My goal is to stop looking for the printed version and never finding it when I need it.
-                <br/>
-                Have fun!
+                To add a recipe, you only have to fill this form !
+                <form action="/recipes" method="POST">
+                    <label>
+                        Name:
+                        <input type="text" placeholder="name" name="name">
+                    </label>
+                    <label>
+                        Quote:
+                        <input type="text" placeholder="quote" name="quote">
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
             </main>
             <nav class="grid__navigation">
                 <ul class="navigation__group">
                     <li class="navigation__element">
-                        <a class="link" href="addrecipe.html"> Add a recipe </a>
+                        <a class="link" href="index.html"> Homepage </a>
                     </li>
                     <li class="navigation__element">
                         <a class="link" href="seeall.html"> See all recipes </a>
