@@ -1,0 +1,12 @@
+# Node files
+node_modules
+npm-debug.log
+
+# Project specific config
+db_config.es6
+
+# Project compiled / bundled files
+dist
+
+# OS specific files
+*.DS_Store
